@@ -15,26 +15,30 @@
 
   <style>
     .jumbotron {
-      background-image: url(https://www.qnesys.com/images/2istockphoto-919955346-1024x1024.jpg);
+      background-image: url(https://www.qnesys.com/images/bg-image-1-1920x800.jpg);
       background-size: cover;
       background-position: 40% 50%;
       background-attachment: fixed;
-      padding: 150px 0px;
       height: auto;
-      text-align: center;
+      position: relative;
     }
 
     .jumbotron img {
-      width: 60%;
-      margin-bottom: 100px;
-
+      width: auto;
+      height: auto;
+      max-width: 180px;
+      max-height: 100px;
+      position: absolute;
+      margin-top: -60px;
     }
 
     .jumbotron h5 {
       text-align: center;
-      background-color: white;
+      background-color: DeepSkyBlue;
       margin-bottom: 20px;
-      font-size: 25px
+      font-size: 100px;
+      margin-top: 100px;
+      margin-bottom:150px;
     }
 
     .subtittle {
@@ -52,33 +56,36 @@
       font-size: 18px;
     }
 
-    #clients1,
-    #clients2,
-    #clients3,
-    #clients4 {
-      opacity: 0.3;
-    }
-
-    #clients1:hover {
-      opacity: 1;
-    }
-
-    #clients2:hover {
-      opacity: 1;
-    }
-
-    #clients3:hover {
-      opacity: 1;
-    }
-
-    #clients4:hover {
-      opacity: 1;
-    }
-
 
     #clients {
-      border-right: 1px solid lightgrey;
-      height: 175px;
+      text-align:center;
+    }
+
+    #clients h6 a{
+      font-size:24px;
+      color: black;
+      text-decoration: none;
+    }
+
+    #clients h6 a:hover{
+      font-size:24px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    .clients-p{
+      font-size:14px;
+      margin-top:18px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    #clients i{
+      text-shadow: 3px 3px 3px grey;
+      font-size: 46px;
+      margin-bottom: 30px;
     }
 
     section img {
@@ -123,6 +130,7 @@
     }
   </style>
 
+
 </head>
 
 <body>
@@ -132,15 +140,13 @@
   <div class="header">
     <div class="row">
       <div class="col-sm-12">
-        <div class="jumbotron text-center">
-          <img src="https://www.qnesys.com/images/Logo%20Qnesys%20-%2020190514%20xx.png" alt="QNESYS">
+        <div class="jumbotron">
+          <a href="weekend5.html"><img src="https://www.qnesys.com/images/Logo Qnesys 01.png" alt="QNESYS" width="50px" height="120px"></a>
           <center>
-            <div class="justify-content-center" style="width: 40%;">
-              <h5 class=" bd-highligh">SMART HOSPITALITY TECHNOLOGY</h5>
+            <div class="container justify-content-center" style="width: 350px;">
+              <h5 class=" bd-highligh">About</h5>
             </div>
           </center>
-
-          <a class="btn btn-primary btn-lg" href="#" role="button">More About Us</a>
         </div>
       </div>
     </div>
@@ -152,11 +158,11 @@
       <div class="row row-30 justify-content-center">
         <div class="col-sm-9 col-md-5 cube-classic-warp align-self-center" class="sub">
           <div class="subtittle">
-            <span class="text-primary">WELCOME TO OUR WEBSITE!</span>
+            <span class="text-primary">A FEW WORDS ABOUT US</span>
           </div>
-          <h2>Our Success<br><span class="text-primary">Is Making</span> Life Easier<br> With Technology And<br>Creativity</h2>
+          <h2>Our Success<br><span class="text-primary">Is Making</span> Life Easier With Technology And Creativity</h2>
         </div>
-        <div class="col-md-7 col-lg-6 col-xl-5">
+        <div class="col-md-7 col-lg-6 col-xl-5 align-self-center">
           <p class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"><span class="text-primary">PT. QNESYS TEKNOLOGI INDONESIA</span>
             (merupakan Perusahaan Afiliasi dari PT. Adhiwira) yang bergerak di sektor Hotel Hospitality Techonology.
             dan sudah bekerjasama dengan bebrapa group hotel
@@ -171,18 +177,34 @@
     </div>
   </section>
 
-  <section style="padding-top:150px; padding-bottom: 150px; background-color: whitesmoke;">
-    <div class="container">
-      <div class="row row-30 justify-content-center">
-        <div class="col-sm-8 col-md-6 col-lg-5 align-self-center" class="sub">
-          <div class="subtittle">
-            <span>SELECTED WORKS</span>
-          </div>
-          <h2>The Hotel Already<br><span class="text-primary">Believes</span>And<br><span class="text-primary">Cooperates</span> With<br>Qnesys</h2>
-          <p class="text-primary">Qnesys invites & cooperates with each hotel, to provide the best solution to improve services to hotel guests, so as to make guests comfortable and loyal.</p>
+  <section style="background-color: whitesmoke;">
+    <div class="container" style="padding-top:150px; padding-bottom: 150px;">
+      <div class="subtittle text-center">
+        OUR SERVICES
+        <h2 style="margin-top: 20px; padding-bottom: 30px;">
+          What We Offer
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3" id="clients">
+          <i class="fas fa-user-friends text-primary"></i>
+          <h6><a href="#">Cooperation</a></h6>
+          <p class="clients-p">The mutual cooperation we offer is systems, network rejuvenation, and Smart tv.</p>
         </div>
-        <div class="col-sm-8 col-md-6">
-          <img src="https://www.qnesys.com/images/Index-1.jpg" alt="QNESYS" width="100%">
+        <div class="col-sm-6 col-lg-3" id="clients">
+          <i class="fab fa-acquisitions-incorporated text-primary"></i>
+          <h6><a id="clients1" href="#">System Development</a></h6>
+          <p class="clients-p">The system that we mean is not only playing in the field of software but also hardware.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3" id="clients">
+          <i class="fas fa-th text-primary"></i>
+          <h6><a id="clients1" href="#">Mobile Application</a></h6>
+          <p class="clients-p">The mobile application is an added value that makes it easy for guests.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3" id="clients">
+          <i class="fas fa-upload text-primary"></i>
+          <h6><a id="clients1" href="#">Online Advertising</a></h6>
+          <p class="clients-p">help sales of food and beverage hotels and vendors who want to join.</p>
         </div>
       </div>
     </div>
@@ -191,10 +213,10 @@
   <section>
     <div class="container" style="padding-top:150px; padding-bottom: 150px; ">
       <div class="subtittle text-center">
-        OUR PRODUCT IOT
+        MEET OUR TEAM
         <h2 style="margin-top: 20px; padding-bottom: 30px;">
-          <span>Hardware</span>
-          <span class="text-primary">IOT (Internet Of Things)</span>
+          <span>People behind</span>
+          <span class="text-primary">our success</span>
         </h2>
       </div>
       <div class="row row-lg row-30 justify-content-center">
@@ -211,129 +233,22 @@
     </div>
   </section>
 
-  <section style="background-color: whitesmoke;">
-    <div class="container" style="padding-top:150px; padding-bottom: 150px; ">
-      <div class="subtittle text-center">
-        OUR CLIENTS AND PARTNERS
-        <h2 style="margin-top: 20px; padding-bottom: 30px;">
-          Happy <span class="text-primary">Clients</span>
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-4 col-md-3" id="clients">
-          <a id="clients1" href="#"><img src="https://www.qnesys.com/images/clients-1-320%20x220.png" alt="QNESYS" width="100%">
-            <div class="garis-v"></div>
-          </a>
+  <section style="padding-top:150px; padding-bottom: 150px; background-color: whitesmoke;">
+    <div class="container">
+      <div class="row row-30 justify-content-center">
+        <div class="col-md-6">
+          <img src="https://www.qnesys.com/images/Wall%20Qnesys.jpg" alt="QNESYS" width="100%">
         </div>
-        <div class="col-6 col-sm-4 col-md-3" id="clients">
-          <a id="clients2" href="#"><img src="https://www.qnesys.com/images/clients-2-320%20x220.png" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3" id="clients">
-          <a id="clients3" href="#"><img src="https://www.qnesys.com/images/clients-3-320%20x220.png" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <a id="clients4" href="#"><img src="https://www.qnesys.com/images/clients-4-320%20x220.png" alt="QNESYS" width="100%"></a>
+        <div class="col-sm-8 col-md-6 col-lg-5 align-self-center" class="sub">
+          <div class="subtittle">
+            <span>OUR ADVANTAGES</span>
+          </div>
+          <h2><span class="text-primary">Why people</span>choose us</h2>
+          <p>Beberapa Hotel Melakukan Kerja sama dengan kami karena mereka yakin, kami dapat membantu perkembangan hotel mereka dan membantu meningkatkan kenyamanan serta pengalaman tamu di hotel mereka dengan Inovasi kami.</p>
+          <p>Hotel juga memberikan kami kepercayaan dari hasil kerjasama tersebut yaitu dapat menayangkan iklan di kamar kamar hotel agar kami juga tetap dapat berkembang dan tetap terus bekerja sama.</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <section>
-    <div class="container" style="padding-top:100px; padding-bottom: 100px; ">
-      <div class="subtittle text-center">
-        SYSTEM
-        <h2 style="margin-top: 20px; padding-bottom: 30px;">
-          Smart Hospitality
-          <span class="text-primary">Technology</span>
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/Mockup-1.jpg" alt="QNESYS" width="100%">
-            <div class="garis-v"></div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/project-3-370x262-x.jpg" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/project-3-370x262.jpg" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/project-3-370x262-x-xxx.jpg" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/project-3-370x262%20-%20x.jpg" alt="QNESYS" width="100%"></a>
-        </div>
-        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
-          <a href="#"><img src="https://www.qnesys.com/images/Digital-ads-vs-konvensional-ads.jpg" alt="QNESYS" width="100%"></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container" style="padding-top:100px; padding-bottom: 100px; text-align: center;">
-      <div class="subtittle text-center">
-        RECENT POSTS
-        <h2 style="margin-top: 20px; padding-bottom: 30px;">
-          Latest <span class="text-primary">news</span> & <span class="text-primary">updates</span>
-        </h2>
-      </div>
-      <div class="row" style="margin-bottom: 50px;">
-        <div class="card-deck">
-          <div class="card card1 col-sm-6 col-lg-4">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted subtittle">OCTOBER 1, 2019</h6>
-              <a href="#" class="card-title">
-                <h5>Telah Hadir Smart <br> Hospitality Pertama di <br> Indonesia di 2019</h5>
-              </a>
-              <p class="card-text">untuk mendukung perkembangan Perhotelan di Indonesia, kini Qnesys hadir.Dengan system ...</p>
-            </div>
-            <div>
-              <hr>
-              <small class="text-muted">
-                <p>by Hengki Setia Putra</p>
-              </small>
-            </div>
-          </div>
-          <div class="card card2 col-sm-6 col-lg-4">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted subtittle">OCTOBER 25, 2019</h6>
-              <a href="#" class="card-title">
-                <h5>Digital Ads Vs <br> Traditional Ads</h5>
-              </a>
-              <p class="card-text">Beberapa menganggap traditional ads sudah mati,tapi berbanding terbalik dengan digital ads yang sedang trending tetapi harga yang begitu mahal…</p>
-            </div>
-            <div>
-              <hr>
-              <small class="text-muted">
-                <p>by Jay Benjamin</p>
-              </small>
-            </div>
-          </div>
-          <div class="card card3 col-sm-6 col-lg-4">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted subtittle">MAY 4, 2018</h6>
-              <a href="#" class="card-title">
-                <h5>Bagaimana <br> perkembangan <br> Internet of Things di <br> Indonesia?</h5>
-              </a>
-              <p class="card-text">Indonesia tidak hanya memiliki potensi yang besar di dalam sektor e-commerce …</p>
-            </div>
-            <div>
-              <hr>
-              <small class="text-muted">
-                <p>Sumber TECHINASIA</p>
-              </small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="link">
-        <a href="#" style="text-decoration: underline; color: black;">More News</a>
-      </div>
-    </div>
-
   </section>
 
   <footer style="background-color: rgb(40,40,40); color: white;">
