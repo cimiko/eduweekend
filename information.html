@@ -9,11 +9,17 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>QNESYS-Information</title>
+    <link rel="icon" href="https://www.qnesys.com/images/Logo%20Qnesys%20-%2020190514%20xx.png">
 
   <script src="https://kit.fontawesome.com/5ac1dba0a5.js" crossorigin="anonymous"></script>
 
   <style>
+  .nav {
+    position: fixed;
+    width: 100%;
+  }
+
     .jumbotron {
       background-image: url(https://www.qnesys.com/images/bg-image-1-1920x800.jpg);
       background-size: cover;
@@ -51,7 +57,7 @@
       margin-top: 40px;
     }
 
-    .list-tags a {
+    .list-tags .list a {
       text-decoration: none;
       color: black;
       background-color: #00a8ff;
@@ -59,12 +65,20 @@
       margin-right: 5px;
     }
 
-    .list-tags a:hover {
+    .list-tags a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .list-tags .list a:hover {
       text-decoration: none;
       color: white;
       background-color: black;
-      padding: 2px 5px;
-      margin-right: 5px;
+    }
+
+    .box-comment {
+      margin-top: 30px;
     }
   </style>
 
@@ -78,10 +92,33 @@
   <div class="header">
     <div class="row">
       <div class="col-sm-12">
+        <div class="pos-f-t nav justify-content-end">
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="weekend5.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="information.html">Information</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="jumbotron">
           <a href="weekend5.html"><img src="https://www.qnesys.com/images/Logo Qnesys 01.png" alt="QNESYS" width="50px" height="120px"></a>
           <center>
-            <div class="container justify-content-center" style="width: 500px;">
+            <div class="container justify-content-center" style="width: 100%;">
               <h5 class=" bd-highligh">Blog Post</h5>
             </div>
           </center>
@@ -113,43 +150,218 @@
                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd
                 gubergren, no sea takimata sanctus est</p>
               <hr style="margin-top: 40px;">
-              <div class="list-tags">
-                <ul>
-                  <li style="display:inline;">
-                    <a href="#">NEWS</a>
-                  </li>
-                  <li style="display:inline;">
-                    <a href="#">TRENDS</a>
-                  </li>
-                  <li style="display:inline;">
-                    <a href="#">WEB DESIGN</a>
-                  </li>
-                </ul>
-              </div>
 
-              <div class="icon">
-                <ul style="list-style:none;">
-                  <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px; border: 1px solid #373435; border-radius: 50%;">
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div class="icon-tags">
+                <div class="list-tags" style="display: inline">
+                  <div class="row">
+                    <div class="col-6 text-left">
+                      <ul>
+                        <li class="list" style="display:inline;">
+                          <a href="#">NEWS</a>
+                        </li>
+                        <li class="list" style="display:inline;">
+                          <a href="#">TRENDS</a>
+                        </li>
+                        <li class="list" style="display:inline;">
+                          <a href="#">WEB DESIGN</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-6 justify-content-end" style="text-align:center">
+                      <ul>
+                        <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px; border: 1px solid #373435; border-radius: 50%;">
+                          <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
+                          <a href="#">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
+                          <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li style="display: inline-block;margin-top: 8px; margin-left: 5px; margin-right: 5px; font-size: 18px; width: 38px; height: 38px;border: 1px solid #373435; border-radius: 50%;">
+                          <a href="#">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row" style="margin-bottom: 80px;">
+              <div class="col-sm-12">
+                <h4>3 Comments</h4>
+                <div class="box-comment">
+                  <div class="comment" style="display: inline;">
+                    <div class="row" style="width:100%;">
+                      <div class="col-2 col-sm-4" style="width:100%;">
+                        <div class="unit-left">
+                          <a href="#">
+                            <img src="https://www.qnesys.com/images/user-1-100x100.jpg" alt="QNESYS" width="100px" height="100px">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-10 col-sm-8" style="width:100%;">
+                        <div class="row">
+                          <div class="col-6 text-left" style="width:100%;">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <h5 style="display: inline;"><a style="display: inline; color: black; text-decoration:none;" href="#">Joe Doe</a></h5>
+                                  <p style="display: inline; color: lightgrey;">|</p>
+                                  <a style="display: inline; color: black; text-decoration: none;" href="#">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-6 text-right" style="width:100%;">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <div class="subtittle">
+                                    <span style="font-size: 10px;">AUG 30, 2018</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Lorem ipsum dolor sit amet, has mutat labores nostrum ei. Duo te blandit erroribus, ut sea ipsum nonumy, mel no ignota accusamus gloriatur. Id has habeo regione, explicari hendrerit reprimique cum te.
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px; width:100%;">
+                      <div class="col-2">
+
+                      </div>
+                      <div class="col-2">
+                        <div class="unit-left">
+                          <a href="#">
+                            <img src="https://www.qnesys.com/images/user-2-100x100.jpg" alt="QNESYS" width="100px" height="100px">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-8">
+                        <div class="row">
+                          <div class="col-6 text-left">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <h5 style="display: inline;"><a style="display: inline; color: black; text-decoration:none;" href="#">Jessica Brown</a></h5>
+                                  <p style="display: inline; color: lightgrey;">|</p>
+                                  <a style="display: inline; color: black; text-decoration: none;" href="#">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-6 text-right">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <div class="subtittle">
+                                    <span style="font-size: 10px;">AUG 30, 2018</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Vortexs nocere, tanquam camerarius urbs. Observare inciviliter ducunt ad emeritis fuga. Cum luna messis, omnes valebates.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px; width:100%;">
+                      <div class="col-2">
+                        <div class="unit-left">
+                          <a href="#">
+                            <img src="https://www.qnesys.com/images/user-3-100x100.jpg" alt="QNESYS" width="100px" height="100px">
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-10">
+                        <div class="row">
+                          <div class="col-6 text-left">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <h5 style="display: inline;"><a style="display: inline; color: black; text-decoration:none;" href="#">Nick Stevens</a></h5>
+                                  <p style="display: inline; color: lightgrey;">|</p>
+                                  <a style="display: inline; color: black; text-decoration: none;" href="#">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-6 text-right">
+                            <div class="body">
+                              <div class="group-sm">
+                                <div class="group-xs" style="display: inline-block;">
+                                  <div class="subtittle">
+                                    <span style="font-size: 10px;">AUG 30, 2018</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Eheu. Gluten camerarius lacta est. Fugas sunt spatiis de fortis deus. Bassus, teres brabeutas sapienter consumere de emeritis, lotus zeta. A falsis, usus rusticus castor. Candidatuss sunt zeluss de.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="col-12" style="margin-bottom: 80px;">
+              <div class="container">
+                <h4 class="tittle" style="margin-bottom: 30px;">Leave a comment</h4>
+                <form>
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="FIRST NAME">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="LAST NAME">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="name" rows="4" placeholder="MESSAGE" style="width: 100%; margin-top:5px; border-radius: 5px; border-color: lightgrey;"></textarea>
+                  </div>
+                  <div class="link">
+                    <a href="#" style="text-decoration: underline; color:black;">Sumbit</a>
+                  </div>
+                </form>
               </div>
             </div>
           </section>
@@ -169,7 +381,7 @@
   <footer style="background-color: rgb(40,40,40); color: white;">
     <div class="container text-center">
       <div class="subtittle text-center">
-        GET IN TOUCH
+        <p style="padding-top: 20px;">GET IN TOUCH</p>
         <h2 style="margin-top: 20px; padding-bottom: 30px;">
           Let’s Join Us
         </h2>
